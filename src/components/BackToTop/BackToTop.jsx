@@ -4,7 +4,7 @@ import { BiUpArrowAlt } from "react-icons/bi";
 import { useState } from "react";
 
 export default function BackToTop() {
-  const [scroll, setScroll] = useState(false);
+  const [scroll, setScroll] = useState(true);
 
   window.addEventListener("scroll", () => {
     window.scrollY > 400 ? setScroll(false) : setScroll(true);
